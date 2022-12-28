@@ -1,0 +1,55 @@
+/* SPINNER CSS */
+
+.spinner,
+.spinner:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border: 9px solid white;
+  border-color: transparent white;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: none;
+}
+
+.show {
+    display: block;
+}
+
+.spinner {
+  width: 96px;
+  height: 96px;
+  -webkit-animation: spin 3.37s linear 0s infinite normal;
+  -moz-animation: spin 3.37s linear 0s infinite normal;
+  -o-animation: spin 3.37s linear 0s infinite normal;
+}
+
+.spinner:before {
+  content: "";
+  display: block;
+  width: 54px;
+  height: 54px;
+  -webkit-animation: spin 1.51s linear 0s infinite reverse;
+  -moz-animation: spin 1.51s linear 0s infinite reverse;
+  -o-animation: spin 1.51s linear 0s infinite reverse;
+}
+
+@-webkit-keyframes spin {
+from { -webkit-transform: rotate(0) }
+to { -webkit-transform: rotate(360deg) }
+}
+@-moz-keyframes spin {
+from { -moz-transform: rotate(0) }
+to { -moz-transform: rotate(360deg) }
+}
+@-o-keyframes spin {
+from { -o-transform: rotate(0) }
+to { -o-transform: rotate(360deg) }
+}

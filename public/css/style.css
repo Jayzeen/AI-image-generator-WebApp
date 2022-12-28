@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lora', serif;
+}
+
+.navbar {
+  font-size: 18px;
+  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+}
+
+.active {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .logo:hover,
+  .nav-links:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+
+
+/* FORM CSS */
+.showcase {
+  height: 450px;
+  width: 100%;
+}
+
+.showcase h1 {
+  font-family: 'Lora', serif;
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.showcase form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.showcase form input,
+form select {
+  font-size: 20px;
+  width: 450px;
+  max-width: 600px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  background: rgba( 255, 255, 255, 0.2 );
+  outline: none;
+}
+
+#size * {
+  border-radius: 10px;
+  
+}
+
+
+#form-main{
+	width:100%;
+	float:left;
+	padding-top:0px;
+}
+
+#form-div {
+	background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 90%);
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 650px;
+	float: left;
+	left: 50%;
+	position: absolute;
+  margin-top:30px;
+	margin-left: -320px;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+
+
+#button-blue{
+	font-family: 'Lora', serif;
+	float:left;
+	width: 90%;
+  height: 20%;
+	border: #fbfbfb2a solid 4px;
+	cursor:pointer;
+	background-color: #3498db6b;
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  margin-top: 10px;
+  font-weight:700;
+  border-radius: 15px;
+}
+
+#button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: #000000;
+  transform: scale(1.1);
+}
+	
+.submit:hover {
+	color: #3498db5e;
+}
+	
+.ease {
+	width: 0px;
+	height: 74px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+/* Image */
+
+.image {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+img {
+  display: block;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+
+.msg {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.blur   {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+}
+
+/* *******************MOBILE RESPONSIVENESS ************************ */
+
+@media only screen and (max-width: 640px) {
+	#form-div{
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+
+  .showcase h1 {
+  font-size: 2.0rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+  .showcase form input,
+form select {
+  font-size: 15px;
+  width: 300px;
+  max-width: 300px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+#button-blue{
+	width: 90%;
+	font-size:20px;
+	padding-top:22px;
+	padding-bottom:22px;
+  margin-top:-4px;
+  font-weight:700;
+  border-radius: 15px;
+}
+
+}

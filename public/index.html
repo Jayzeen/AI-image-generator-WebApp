@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/spinner.css" />
+
+    <script src="js/main.js" defer></script>
+    <title>AI Image Generator</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+            <a href="#" class="logo">Jayz</a>
+            <ul class="main-nav" id="js-menu">
+                <li>
+                    <a href="#" class="nav-links">Home</a>
+                </li>
+                <li>
+                    <a href="https://beta.openai.com/docs" target="_blank" class="nav-links">OpenAI Docs</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="showcase" id="section">
+            <div id="form-main">
+                <div id="form-div">
+                    <form id="image-form">
+                        <h1>Describe An Image</h1>
+                        <div class="form-control">
+                            <input type="text" id="prompt" placeholder="Enter Text" />
+                        </div>
+                        <!-- size -->
+                        <div class="form-control">
+                            <select name="size" id="size">
+                                <option value="small">Small</option>
+                                <option value="medium" selected>Medium</option>
+                                <option value="large">Large</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn" id="button-blue">Generate</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="image">
+            <div class="image-container" id="image-box">
+                <h2 class="msg"></h2>
+                <img src="" alt="" id="image" />
+            </div>
+        </section>
+    </main>
+
+    <div class="spinner"></div>
+</body>
+
+</html>
