@@ -10,7 +10,7 @@ This web app is made using **Nodejs,Express** for Backend and pure **HTML,CSS,JS
 
 Clone the Git repo:
 ```
-
+git clone https://github.com/Jayzeen/AI-image-generator-WebApp.git
 ```
 Install The Dependencies
 ```
